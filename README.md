@@ -6,7 +6,7 @@
 [Go to Repo](https://github.com/ukthanki/MIT_Transit_Data_Application)
 
 <p align="center">
-    <img width="100%" src="https://github.com/ukthanki/MIT_Books_Web_Application/assets/42117481/b9a29299-7d26-4e47-935f-eee6e297d448">
+    <img width="100%" src="https://github.com/ukthanki/MIT_Transit_Data_Application_Project/assets/42117481/a2e27cb7-dc4d-4f2e-82cc-fdbcff125596">
 </p>
 
 Up to this point in the course, we had learned the following topics:
@@ -150,8 +150,5 @@ This project was quite insightful because it focused heavily on ETL and how it m
 **You can view the full Project in the "module_8.py" and "Module 8_Umang_Thanki.ipynb" files in the Repository.**
 
 [Go to Repo](https://github.com/ukthanki/MIT_Books_Web_Application_Project)
-
-In this project, we will modify provided code to create a website that allows users to see a list of books as well as add more books. We will add users, define roles, and ensure that only users with an 'admin' role are allowed to add books.
-
 
 The purpose of this project is to collect sufficient data provided by the Massachusetts Bay Transportation Authority (MBTA) API for a period of approximately 12 hours in order to perform analysis on the transportation dataset in a Jupyter Notebook.
