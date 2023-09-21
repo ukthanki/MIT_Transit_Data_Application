@@ -107,8 +107,4 @@ print(f'The estimated speed for Bus y1895 to complete Route 1 is {getEstimatedSp
 
 This project was interesting because it leveraged APIs and Docker containers, and also allowed us to create a visually pleasing web application. This project was also realistic in nature and allowed us to analyze real-world data and gain insights from it.
 
-**You can view the full Project in the "module_8.py" and "Module 8_Umang_Thanki.ipynb" files in the Repository.**
-
-[Go to Repo](https://github.com/ukthanki/MIT_Books_Web_Application_Project)
-
-The purpose of this project is to collect sufficient data provided by the Massachusetts Bay Transportation Authority (MBTA) API for a period of approximately 12 hours in order to perform analysis on the transportation dataset in a Jupyter Notebook.
+**You can view the full Project in the various files in the Repository.**
