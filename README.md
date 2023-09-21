@@ -72,8 +72,40 @@ The Data Frame produced the output shown below in Figure 2:
 
 Once our data was loaded into a Data Frame, we could answer questions such as 1) What is the average time it takes for certain buses to complete Route 1? and 2) What is an estimate of the speed of a bus from current_stop_sequence = 1 to the last current_stop_sequence?
 
+The answer to the first question is shown in a bar chart below in Figure 3:
 
-This project was quite insightful because it focused heavily on ETL and how it may be done programmatically as opposed to manually. I could have produced the same plots by performing all steps in Python only, but by loading the data in MySQL, it became available to a wider audience for querying and analysis; this represents a real-world situation as a result because data must be accessible easily by multiple entities.
+| ![download](https://github.com/ukthanki/MIT_Transit_Data_Application_Project/assets/42117481/6702d4ac-3f0f-448e-b865-b5a5c0f5bb81)| 
+|:--:| 
+| **Figure 3.** Average time to complete Route 1. |
+
+Furthermore, we answered the second question with an estimate of 4.15 mph using the following code:
+
+```python
+from haversine import haversine, Unit
+
+def getEstimatedSpeed(df, bus_id):    
+    test = timings(df, bus_id)
+
+    first = getMinStopNumber(df, bus_id)
+    last = getMaxStopNumber(df, bus_id)
+
+    fsindexlist = getIndices(test, first)
+    lsindexlist = getIndices(test, last)
+    
+    start_end_df = test.loc[combinedIndexList(fsindexlist,lsindexlist)]
+    
+    first_stop_latlon = (start_end_df.iloc[0]['latitude'], start_end_df.iloc[0]['longitude'])
+    last_stop_latlon = (start_end_df.iloc[1]['latitude'], start_end_df.iloc[0]['longitude'])
+    
+    distance = haversine(first_stop_latlon, last_stop_latlon, unit='mi')
+    time = avgTimeInMin(getTripTimes(df, bus_id))
+    return round(distance/(time/60),2)
+
+print(f'The estimated speed for Bus y1895 to complete Route 1 is {getEstimatedSpeed(df, "y1895")} mph.')
+
+```
+
+This project was interesting because it leveraged APIs and Docker containers, and also allowed us to create a visually pleasing web application. This project was also realistic in nature and allowed us to analyze real-world data and gain insights from it.
 
 **You can view the full Project in the "module_8.py" and "Module 8_Umang_Thanki.ipynb" files in the Repository.**
 
