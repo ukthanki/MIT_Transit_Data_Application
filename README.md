@@ -25,6 +25,13 @@ In this project, we used the various skills we have learned to build a transit a
 
 You can learn more about the MBTA [here](https://www.mbta.com/).
 
+This project was split up into two main parts. The first part involved setting up the infrastructure, completing the code, and collecting 12 hours of transit data. This was followed by analyzing the data in a Jupyter Notebook.
+
+We began the project by creating a Docker network for all of our containers. The first container we made was a MySQL server that would store data returned by the MBTA API. We also made a MongoDB container for CDC. As we followed the steps in the procedure provided to us, we opened the web application on localhost:3000 and saw our functioning transit application, as shown in Figure 1 below:
+
+| ![download](https://github.com/ukthanki/MIT_Transit_Data_Application_Project/assets/42117481/aea78afa-991c-4210-bb8d-fea7adbe2f51)| 
+|:--:| 
+| **Figure 1.** Transit Application Landing Page. |
 
 
 I saw this as an opportunity to be more efficient with my code by creating a function that does this for all of the required tabs in the Excel spreadsheet, as shown below:
