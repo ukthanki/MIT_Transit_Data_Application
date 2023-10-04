@@ -20,7 +20,7 @@ Up to this point in the course, we had learned the following topics:
 9. Docker
 10. Maven
 
-In this project, we used the various skills we have learned to build a transit application that shows the position of buses along Route 1 for the Massachusetts Bay Transportation Authority (MBTA). The project was presented to us in a way that a majority of the base code was already provided to us and we had to fill in various sections with code.
+In this project, we used the various skills we have learned to build a transit application that shows the position of buses along Route 1 for the Massachusetts Bay Transportation Authority (MBTA). The project was presented in a way that a majority of the base code was already provided to us and we had to fill in various sections with code.
 
 You can learn more about the MBTA [here](https://www.mbta.com/).
 
