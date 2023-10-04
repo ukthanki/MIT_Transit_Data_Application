@@ -3,7 +3,6 @@
 # MIT Data Engineering Professional Certification
 
 ## Transit Data Application Project
-[Go to Repo](https://github.com/ukthanki/MIT_Transit_Data_Application)
 
 <p align="center">
     <img width="100%" src="https://github.com/ukthanki/MIT_Transit_Data_Application_Project/assets/42117481/a2e27cb7-dc4d-4f2e-82cc-fdbcff125596">
